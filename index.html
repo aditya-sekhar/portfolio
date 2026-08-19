@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aditya Sekhar — AI Architect | Payment Fraud &amp; Security</title>
+<meta name="description" content="Aditya Sekhar — AI Architect at Comcast. Fifteen years building payment fraud detection, identity platforms and billing systems at scale.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="nav-name" href="#top">Aditya Sekhar</a>
+    <ul class="nav-links">
+      <li><a href="#domain">Domain</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-inner">
+      <img class="hero-photo" src="profile.JPG" alt="Aditya Sekhar">
+      <div>
+        <h1>Aditya Sekhar</h1>
+        <div class="role">AI Architect | Engineer 5 — Comcast</div>
+        <p class="pitch">Fifteen years on the systems that protect money in motion — <em>payment fraud detection</em> today, <em>identity at 10M logins a day</em> before it, and the <em>billing platforms</em> underneath. I tend to find the expensive status quo, build the proof it can be replaced, and then lead what replaces it.</p>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/adityasekhar" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/aditya-sekhar" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.youtube.com/@AnyBodyCanML" target="_blank" rel="noopener">YouTube — AnyBodyCanML</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <span class="eyebrow">About</span>
+    <p class="about-lede">I've spent my career on systems people cannot afford to have fail — device test infrastructure, then authentication at subscriber scale, then money movement, and now fraud. Eleven of those years have been at Comcast, in customer payment processing, billing and identity.</p>
+    <div class="through-line">
+      <p>The pattern repeats: identify a systemic inefficiency, build a working proof it can be replaced, and get the organization to adopt it — at higher stakes each time. A QA-automation workflow, then a $200K/yr licensing decision, then a $6–7M/yr fraud-vendor contract.</p>
+    </div>
+  </div>
+</section>
+
+<section id="domain">
+  <div class="wrap">
+    <span class="eyebrow">Domain</span>
+    <h2>Where I've actually done the work</h2>
+    <p class="section-lede">Since 2017 my work has sat in two adjacent places: the identity layer in front of the money, and the payment systems behind it.</p>
+    <div class="domain-grid">
+      <div class="domain-item">
+        <h4>Payment Fraud &amp; Risk Scoring</h4>
+        <p>Architect of Comcast's in-house real-time transaction risk platform.</p>
+      </div>
+      <div class="domain-item">
+        <h4>Identity &amp; Access Management</h4>
+        <p>Built and led the platform handling 10M+ authentications a day.</p>
+      </div>
+      <div class="domain-item">
+        <h4>Wallets &amp; Tokenization</h4>
+        <p>Led the programme that encrypted 39.5M customer wallet tokens.</p>
+      </div>
+      <div class="domain-item">
+        <h4>Disputes &amp; Chargebacks</h4>
+        <p>Designed and led development of a new dispute management system.</p>
+      </div>
+      <div class="domain-item">
+        <h4>Payment Processing &amp; Billing</h4>
+        <p>Four years leading the engineering organization that owned the domain.</p>
+      </div>
+      <div class="domain-item">
+        <h4>Federation &amp; Partner Trust</h4>
+        <p>SAML 2.0, OpenID Connect and OAuth 2 federation with external partner IdPs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <span class="eyebrow">Flagship Work</span>
+    <h2>Two platforms, one architectural instinct</h2>
+    <div class="flagship">
+
+      <article class="flagship-card">
+        <div class="flagship-head">
+          <h3>PBI — Payment Behavior &amp; Insights</h3>
+          <span class="status-chip">V1 shipped · in production use</span>
+        </div>
+        <p class="flagship-oneline">"Proposed, prototyped and now lead an in-house payment risk platform that scores every Comcast transaction in real time, built to displace $6–7M/year of external vendor spend."</p>
+        <p>It started as a lab-week proof of concept, after noticing what an external fraud and risk vendor was costing us. The demo earned a pitch to the VP of Engineering and business leadership, who greenlit it — I then built the real system alone over roughly two months, before any team existed. It's now a funded product I lead as architect, technical lead and product owner across a 4-person team, and I've personally authored roughly 90% of the codebase to date. The work protects Comcast's multi-billion-dollar payment flows from external fraud actors.</p>
+        <p>Every transaction is scored in real time by combining offline-trained anomaly-detection and classification models with a runtime rule engine — models offline, decisions online, so the business can retune its risk appetite without a model retrain or a redeploy. A business-facing UI lets risk owners review accounts and manage configuration themselves. V1 is approved for launch and already runs in production batch-replay, generating the reports the business relies on today to act on high-risk accounts, ahead of full payment-gateway integration.</p>
+        <div class="stat-row">
+          <div class="stat"><span class="num">250ms</span><span class="label">p99 scoring latency</span></div>
+          <div class="stat"><span class="num">$6–7M/yr</span><span class="label">vendor spend targeted</span></div>
+          <div class="stat"><span class="num">Multi-$B</span><span class="label">payment flows protected</span></div>
+          <div class="stat"><span class="num">~90%</span><span class="label">codebase authored personally</span></div>
+        </div>
+        <div class="stack-row">
+          <span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">pandas</span>
+          <span class="chip">MLflow</span><span class="chip">AWS ECS</span><span class="chip">Rule engine</span>
+        </div>
+      </article>
+
+      <article class="flagship-card">
+        <div class="flagship-head">
+          <h3>Xerxes — Cross-Partner Identity Platform</h3>
+          <span class="status-chip">Production · 2017–2021</span>
+        </div>
+        <p class="flagship-oneline">"Made the build-vs-buy case to replace a licensed OpenAM deployment with a stateless, in-house Spring Security identity platform — because per-seat licensing couldn't survive the jump from enterprise users to 30 million subscribers."</p>
+        <p>Comcast syndicates applications to partner operators — Cox, Shaw, Videotron and others — whose users authenticate against their own identity providers but need Comcast-specific roles inside Comcast applications. The inherited solution was OpenAM: stateful, a black box, and priced per seat at roughly $200K/yr for an enterprise-scale user base that was about to become a 30-million-subscriber one. I made the case to rebuild it stateless on Spring Security, brokering login against SAML or OIDC providers and issuing JWT access and refresh tokens — eliminating the licence and, more importantly, an architecture that could not scale at any price.</p>
+        <p>Delegated authorization let client teams define their own roles and rights, embedded in the id_token, so a user arriving from a partner's IdP landed in a Comcast application with exactly the right entitlements — without Comcast ever holding those users' credentials. Encryption in transit and at rest, regular security audits and multi-region deployment came with the territory. When a federated provider changed its signature handling and broke the integration in production, I ran the fix.</p>
+        <div class="stat-row">
+          <div class="stat"><span class="num">10M+</span><span class="label">authentications / day</span></div>
+          <div class="stat"><span class="num">99.99%</span><span class="label">uptime, sub-second response</span></div>
+          <div class="stat"><span class="num">~30M</span><span class="label">subscriber-scale target</span></div>
+          <div class="stat"><span class="num">$200K/yr</span><span class="label">licence cost eliminated</span></div>
+        </div>
+        <div class="stack-row">
+          <span class="chip">Java</span><span class="chip">Spring Security</span><span class="chip">MongoDB</span>
+          <span class="chip">SAML 2.0</span><span class="chip">OpenID Connect</span><span class="chip">OAuth 2</span><span class="chip">JWT</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="also-block">
+      <h3 class="also-head">Also in the payments &amp; security stack</h3>
+      <div class="also-grid">
+        <div class="also-item">
+          <span class="also-num">39.5M</span>
+          <p><strong>Wallet Encryption.</strong> Led a 4-engineer team across two countries to encrypt customer electronic wallet tokens.</p>
+        </div>
+        <div class="also-item">
+          <span class="also-num">&gt;50%</span>
+          <p><strong>Deployment &amp; monitoring pipeline.</strong> Cut time-to-deploy for the identity platform and raised system-health visibility — the work behind my Circle of Success award.</p>
+        </div>
+        <div class="also-item">
+          <span class="also-num">MLOps</span>
+          <p><strong>In-house ML platform.</strong> Data preparation, experiment management and a central model registry on MLflow and AWS, making fraud-model iteration reproducible.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <span class="eyebrow">Experience</span>
+    <h2>15+ years of expanding scope</h2>
+    <ul class="timeline">
+      <li>
+        <div class="when">Apr 2025 — Present</div>
+        <div>
+          <div class="role-title">AI Architect | Engineer 5</div>
+          <div class="org">Comcast · Remote</div>
+          <p>Originated, architected and now lead PBI (Payment Behavior &amp; Insights) as architect, technical lead and product owner over a 4-person team.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Apr 2021 — Mar 2025</div>
+        <div>
+          <div class="role-title">Engineering Manager 2</div>
+          <div class="org">Comcast — Customer Payment Processing &amp; Billing · Chennai</div>
+          <p>Built and led a 20-engineer global DevOps organization from scratch across Chennai and the USA; sustained ~91% employee satisfaction with one departure in four years. Led the Wallet Encryption programme and the CCP cloud migration (642 VMs across four scrum teams, 30% resource reduction), and started the dispute management system. Proposed and prototyped what became PBI.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Dec 2017 — Apr 2021</div>
+        <div>
+          <div class="role-title">Technical Lead | Senior Developer</div>
+          <div class="org">Comcast — Xerxes Identity Platform · Chennai + Philadelphia</div>
+          <p>Architected and built Xerxes end to end; led the OpenAM → Spring Security rebuild; built the self-service UI for partner teams and the Splunk/AppDynamics SLA alerting that cut L1 support time 30%.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Feb 2015 — Dec 2017</div>
+        <div>
+          <div class="role-title">Senior Java Developer, Automation Test</div>
+          <div class="org">Computer Enterprises, Inc. (contract to Comcast) · Chennai</div>
+          <p>Team lead on the original Xerxes SSO service (team of 8), building the OAuth 2 module and multi-tenant authorization; module lead on ABL Messaging (ActiveMQ/Kafka); senior developer on xRay test automation.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Oct 2010 — Jan 2015</div>
+        <div>
+          <div class="role-title">Senior Software Engineer</div>
+          <div class="org">Sasken — client DeviceAnywhere / Keynote</div>
+          <p>Built automated test infrastructure for a cloud-based real-device testing platform; introduced automation into a previously all-manual QA organization by integrating it with the tooling they already used — work that took me to San Mateo, California to present the approach to the client.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="approach">
+  <div class="wrap">
+    <span class="eyebrow">Approach</span>
+    <h2>One principle, tested four ways</h2>
+    <p class="section-lede">Keep the probabilistic, expensive component off the critical path, and let the deterministic layer do as much of the work as it possibly can. It's the decision at the centre of PBI, and I've kept testing it on my own time — because in fraud and payments, "the model was confident" is not an acceptable answer.</p>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <span class="kicker">In production — PBI</span>
+        <h3>Models offline, decisions online</h3>
+        <p>Trained models feed a runtime rule engine rather than deciding directly. The business can move its risk appetite without a retrain or a deploy, and every decision stays explainable to an analyst.</p>
+      </div>
+
+      <div class="project-card">
+        <span class="kicker">Side project — VisionX</span>
+        <h3>Deterministic arithmetic, probabilistic identification</h3>
+        <p>The model reads an engineering drawing and identifies the operations; a separate admin-editable catalogue prices them. The system is structurally unable to hallucinate a cost.</p>
+      </div>
+
+      <div class="project-card">
+        <span class="kicker">Side project — Trio</span>
+        <h3>A zero-token happy path</h3>
+        <p>An on-device matcher resolves the common case entirely in the browser, for free and offline. A model is only reached for the remainder, so the expensive path is the exception rather than the default.</p>
+      </div>
+
+      <div class="project-card">
+        <span class="kicker">Advisory</span>
+        <h3>Rule gates before model calls</h3>
+        <p>Advising a friend's startup on an agentic platform, the highest-leverage change was ordering: hard deterministic filters run first, so tokens are only ever spent on what already passed the cheap test.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="wrap">
+    <span class="eyebrow">Teaching &amp; Mentoring</span>
+    <h2>Influence beyond the reporting line</h2>
+    <div class="teach-grid">
+      <div class="teach-item">
+        <span class="num">4.2 / 5</span>
+        <p><strong>Instructor, Comcast internal engineering curriculum.</strong> I design and deliver quarterly ML sessions to 20–50 engineers — ML fundamentals, ML vs. deep learning, tooling — with topics set each cycle by participant demand.</p>
+      </div>
+      <div class="teach-item">
+        <span class="num">Both ways</span>
+        <p><strong>Mentor, Comcast's mentor–mentee programme.</strong> Mostly engineers weighing a move into management — a question I can answer from both sides, having made the engineer → manager → engineer round trip deliberately.</p>
+      </div>
+      <div class="teach-item">
+        <span class="num">Guest talk</span>
+        <p><strong>St. Joseph's College of Engineering &amp; Technology, Palai.</strong> Spoke with final-year students on applied AI and technical-interview readiness.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <span class="eyebrow">Skills</span>
+    <h2>Core expertise</h2>
+    <div class="skill-groups">
+      <div>
+        <h4>Identity &amp; Security</h4>
+        <ul><li>OAuth 2</li><li>OpenID Connect</li><li>SAML 2.0</li><li>JWT / SSO</li><li>Federation</li><li>Spring Security</li><li>Encryption in transit &amp; at rest</li></ul>
+      </div>
+      <div>
+        <h4>Fraud &amp; Risk ML</h4>
+        <ul><li>Anomaly detection</li><li>Binary classification</li><li>Rule engines</li><li>Real-time scoring</li><li>scikit-learn</li><li>pandas</li></ul>
+      </div>
+      <div>
+        <h4>Platform &amp; MLOps</h4>
+        <ul><li>Python</li><li>Java / Spring Boot</li><li>MLflow</li><li>Model registry</li><li>AWS ECS</li><li>MongoDB</li><li>Jenkins / Ansible</li></ul>
+      </div>
+      <div>
+        <h4>LLM &amp; Agentic Systems</h4>
+        <ul><li>Multi-provider LLM pipelines</li><li>Structured output</li><li>Agentic architecture</li><li>Cost-aware AI design</li></ul>
+      </div>
+      <div>
+        <h4>Leadership</h4>
+        <ul><li>Org building</li><li>Stakeholder mgmt to VP</li><li>Teaching &amp; curriculum design</li><li>Mentoring</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="wrap">
+    <span class="eyebrow">Awards &amp; Education</span>
+    <h2>Recognition and credentials</h2>
+    <div class="award-grid">
+      <ul class="award-list">
+        <li><div class="title">Circle of Success — CIEC</div><div class="meta">Nov 2020 · deployment &amp; monitoring pipeline that cut deploy time &gt;50%</div></li>
+        <li><div class="title">Comcast India Champ Award</div><div class="meta">2019 · one of 7 recipients</div></li>
+        <li><div class="title">Live Our Culture Leadership Award</div><div class="meta">Comcast, 2023</div></li>
+      </ul>
+      <ul class="award-list">
+        <li><div class="title">M.Tech, Computer Software Engineering</div><div class="meta">BITS Pilani · in progress, expected Jun 2027</div></li>
+        <li><div class="title">B.E., Electronics &amp; Communication Engineering</div><div class="meta">Anna University</div></li>
+        <li><div class="title">AI/ML — Large-Scale System Design</div><div class="meta">IIT Madras executive programme, Jun 2024</div></li>
+        <li><div class="title">Advanced Learning Algorithms</div><div class="meta">DeepLearning.AI &amp; Stanford University, Feb 2024</div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="quotes">
+  <div class="wrap">
+    <span class="eyebrow">What People Say</span>
+    <h2>From LinkedIn recommendations</h2>
+    <div class="quote-grid">
+      <div>
+        <blockquote>"I've used him regularly to help screen other technical resources. Not only do I recommend him for any further career options on either a technical leadership or architecture path, I'd have him on my team again in a heartbeat."</blockquote>
+        <div class="quote-attr">Frank Gilroy — directly managed Aditya, Comcast India Engineering Center</div>
+      </div>
+      <div>
+        <blockquote>"His talented teammates would not have been able to deliver their universally-applauded authentication platform without him. He always maintains a positive attitude... he's always ready to engage on tactical and strategic issues across timezones."</blockquote>
+        <div class="quote-attr">Travis Parchman — Fractional CTO, VP of Software Engineering</div>
+      </div>
+      <div>
+        <blockquote>"On each project, Aditya takes initiative to understand our user's problems and the complex environment our product operates in. He constantly delivers on the team commitments and is proactive in ensuring the product is using the right technology to deliver new features faster."</blockquote>
+        <div class="quote-attr">Thomas Priore — Sr. Director of Product Management, Cybersecurity Software Engineering</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-block">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>Happy to talk about payment fraud and risk platforms, identity architecture, and getting applied ML into production where correctness matters.</p>
+    <div class="contact-links">
+      <a class="primary" href="https://www.linkedin.com/in/adityasekhar" target="_blank" rel="noopener">Message me on LinkedIn</a>
+      <a href="https://github.com/aditya-sekhar" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.youtube.com/@AnyBodyCanML" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Aditya Sekhar
+</footer>
+
+</body>
+</html>
